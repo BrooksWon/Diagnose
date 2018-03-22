@@ -150,7 +150,7 @@
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (!error) {
         [[[UIAlertView alloc] initWithTitle:nil
-                                    message:@"保存到相册，请通过微信反馈，谢谢！"
+                                    message:@"保存到相册，请反馈给相关RD，谢谢！"
                                    delegate:nil
                           cancelButtonTitle:@"好的" otherButtonTitles: nil] show];
     }
@@ -286,7 +286,7 @@
 
 - (UIBarButtonItem *)rightBarButtonItem {
     if (!_rightBarButtonItem) {
-        _rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"分享"
+        _rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存"
                                                                style:UIBarButtonItemStylePlain
                                                               target:self
                                                               action:@selector(shareAction:)];
